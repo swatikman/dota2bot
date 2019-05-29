@@ -1,0 +1,47 @@
+{
+  "name": "dota2telegrambot",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index2.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --recursive --timeout 50000"
+  },
+  "dependencies": {
+    "@meanie/mongoose-upsert-many": "^1.5.1",
+    "@types/cors": "^2.8.5",
+    "@types/express": "^4.16.1",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/lodash": "^4.14.123",
+    "awesome-typescript-loader": "^5.2.1",
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "http-errors": "~1.6.2",
+    "inversify": "^5.0.1",
+    "js2xmlparser": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.5.4",
+    "morgan": "~1.9.0",
+    "node-cron": "^2.0.3",
+    "npm": "^6.9.0",
+    "pg": "^7.10.0",
+    "pg-promise": "^8.6.5",
+    "pug": "2.0.0-beta11",
+    "reflect-metadata": "^0.1.13",
+    "source-map-loader": "^0.2.4",
+    "telegraf": "^3.29.0",
+    "xml": "^1.0.1",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.1.4"
+  }
+}

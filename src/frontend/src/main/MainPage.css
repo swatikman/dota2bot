@@ -1,0 +1,9 @@
+
+.leftMatches {
+    /* margin-top: 500px; */
+}
+
+.allMatches {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

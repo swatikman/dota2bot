@@ -1,0 +1,8 @@
+node_modules
+config
+package-lock.json
+.idea
+.vscode
+src/Config.ts
+*.js
+!src/frontend/**

@@ -1,0 +1,33 @@
+.matches {
+    border: 1px solid black;
+    width: 50vw;
+    /* float:right; */
+}
+
+.matches .match {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.matches .odd {
+    background-color: black;
+}
+
+.matches .even {
+    background-color: #282c34;
+}
+
+.matches .match .secondTeam {
+    justify-self: start;
+}
+
+.matches .match .startsIn {
+    justify-self: center;
+}
+
+.matches .match .secondTeam {
+    justify-self: end;
+}
+
