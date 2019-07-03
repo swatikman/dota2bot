@@ -33,7 +33,7 @@ export class TelegramBot {
     private userIds: Map<number, number> = new Map();
 
     constructor() {
-
+        
         this.bot = new Telegraf(Config.TELEGRAM_BOT_TOKEN);
         this.setup();
     }

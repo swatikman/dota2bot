@@ -1,6 +1,7 @@
 import 'reflect-metadata';
 // need to import container at start of project bc sometimes injection is not working
 import './di/Container';
+import * as Config from './Config'
 import { ApiRetriever } from './ApiRetriever';
 import { container } from './di/Container';
 import { RETRIEVERS } from './di/Types';
@@ -9,7 +10,6 @@ import { ExpressApp } from './api/ExpressApp';
 import { database } from './PostgreSqlDatabase';
 import { TelegramBot } from './TelegramBot';
 database.connect();
-
 
 const bot = new TelegramBot();
 bot.launch();
@@ -27,7 +27,6 @@ Notificator.startNotificator(async (notification) => {
 }, 30);
 
 const app = new ExpressApp(1234);
-
 
 app.listen();
 

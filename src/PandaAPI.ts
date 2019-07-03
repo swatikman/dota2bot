@@ -18,7 +18,7 @@ export class PandaApi {
     }
 
     async getTournaments(page: number = 1) {
-        return axios.default.get(`${this.DOTA_URL}tournaments?token=${this.options}&page${page}`);
+        return axios.default.get(`${this.DOTA_URL}tournaments?{this.options}&page${page}`);
     }
 
     async getPastTournaments(page = 1) {

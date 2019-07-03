@@ -4,7 +4,8 @@
   "private": true,
   "main": "index2.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "tsc-watch --onSuccess \"node ./src/index.js\"",
+    "fun": "tsc-watch",
     "test": "mocha --recursive --timeout 50000"
   },
   "dependencies": {
@@ -19,6 +20,7 @@
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
+    "dotenv": "^8.0.0",
     "express": "^4.16.4",
     "express-validator": "^5.3.1",
     "http-errors": "~1.6.2",
@@ -30,10 +32,12 @@
     "morgan": "~1.9.0",
     "node-cron": "^2.0.3",
     "npm": "^6.9.0",
-    "pg": "^7.10.0",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.3",
     "pg-promise": "^8.6.5",
     "pug": "2.0.0-beta11",
     "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.9.2",
     "source-map-loader": "^0.2.4",
     "telegraf": "^3.29.0",
     "xml": "^1.0.1",
@@ -42,6 +46,10 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "tsc-watch": "^2.2.1",
+    "typescript": "^3.5.2"
   }
 }

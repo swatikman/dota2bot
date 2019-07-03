@@ -63,5 +63,4 @@ container.bind<Notificator>(NOTIIFICATOR).to(Notificator);
 container.bind<PandaApi>(PANDA_API.PANDA).to(PandaApi);
 container.bind<string>(PANDA_API.TOKEN).toConstantValue(Config.PANDA_API_TOKEN);
 
-
 export { container };

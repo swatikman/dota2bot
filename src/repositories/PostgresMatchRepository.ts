@@ -5,7 +5,6 @@ import { injectable } from "inversify";
 @injectable()
 export class PostgresMatchRepository extends PostgresRepository implements MatchRepository {
 
-
     constructor() {
         super();
     }
@@ -21,7 +20,7 @@ export class PostgresMatchRepository extends PostgresRepository implements Match
 
     async findUpcomingTeamMatches(teamId, limit = 10, offset = 0) {
         return this.database.query(`SELECT * FROM matches WHERE (team1Id = ${teamId} 
-        OR team2Id = ${teamId}) AND beginat > now() LIMIT ${limit} OFFSET = ${offset}`);
+        OR team2Id = ${teamId}) AND beginat > now() LIMIT ${limit} OFFSET ${offset}`);
     }
 
     async findUpcomingTournamentMatches(tournamentId, limit = 10, offset = 0) {

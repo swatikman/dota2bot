@@ -3,14 +3,33 @@ const options = {
     // promiseLib: promise
 };
 const pgp = require('pg-promise')(options);
+// const Sequelize = require('sequelize');
+// export const db = new Sequelize('dota2bot', 'postgres', 'root', {
+//     host: 'database',
+//     dialect: 'postgres',
+//     pool: {
+//         max: 5,
+//         min: 0,
+//         acquire: 30000,
+//         idle: 10000
+//     }
+// });
 
 export class Database {
     private client: any;
 
     async connect() {
 
-        const conString = "postgres://postgres:root@localhost:5432/dota2bot";
+        const conString = "postgres://postgres:root@database:5432/dota2bot";
+        // db.authenticate()
+        //     .then(res => {
+        //         console.log('Connected to db...')
+        //     })
+        //     .catch(err => {
+        //         console.log(1234, err)
+        //     });
         this.client = await pgp(conString);
+        
         // console.log(this.client);
         return this.client;
     }

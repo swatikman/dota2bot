@@ -3,6 +3,8 @@ config
 package-lock.json
 .idea
 .vscode
-src/Config.ts
+src/.env
+.env
 *.js
 !src/frontend/**
+postgres_data/
